@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas de Pago</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="fpstyles.css">
+
+    <div class="div_del_body">
+        <div>
+            <img class="image_header_desktopfp"
+                src="https://www.electromisiones.com.ar/img/cms/Formas de Pago/New Folder/FDP_TITULAR (1).webp"
+                alt="image_header">
+            <!--mobile-->
+            <img class="fpimage_header_mobile"
+                src="https://www.electromisiones.com.ar/img/cms/Quienes Somos - Nuevo/FDP_MOBILE.webp"
+                alt="image_header">
+        </div>
+        <div class="centered-text  ">
+            <p class="cabecera"> <b>¡Todos los días formas de pago ideales!</b></p>
+            <p class="cabecera">Disfrutá la facilidad y comodidad de realizar tus compras de manera conveniente y sin
+                complicaciones.</p>
+
+        </div>
+        <!--
+<h1>Conoce nuestras formas de pago</h1>
+ <div>Por Día</div>
+            <div>Por Banco</div>
+            <div>Tarjeta Concedida</div>
+            <div>Planes de Financiamiento</div>
+        -->
+        <div class="content-contenido">
+            <div class="selector-container">
+
+                <div class="province-selector">
+                    <!--
+                    <h2>Selecione su provincia</h2>
+                    <select id="provinceSelect">
+                        <option selected="selected" value="provincia1">Chaco</option>
+                        <option value="provincia2">Corrientes</option>
+                        <option value="provincia3">Formosa</option>
+                        <option value="provincia4">Misiones</option>
+                    </select>
+                     -->
+                </div>
+
+
+                <div class="day-selector">
+                    <button class="day botones_dias" value="lunes">Lunes</button>
+                    <button class="day botones_dias" value="martes">Martes</button>
+                    <button class="day botones_dias" value="miercoles">Miercoles</button>
+                    <button class="day botones_dias" value="jueves">Jueves</button>
+                    <button class="day botones_dias" value="viernes">Viernes</button>
+                    <button class="day botones_dias" value="sabado">Sabado</button>
+                    <button class="day botones_dias" value="domingo">Domingo</button>
+                    <button class="day botones_dias" value="todoslosdias">Todos los dias</button>
+                </div>
+                <!-- Select Dropdown for non-desktop views -->
+                <label class="day-select centered-text" for="daySelect">Seleccione un día</label>
+                <select class="day-select" id="daySelect">
+                    <option class="day" selected="selected" disabled="disabled">--Seleccione el dia--</option>
+                    <option class="day" value="lunes">Lunes</option>
+                    <option class="day" value="martes">Martes</option>
+                    <option class="day" value="miercoles">Miércoles</option>
+                    <option class="day" value="jueves">Jueves</option>
+                    <option class="day" value="viernes">Viernes</option>
+                    <option class="day" value="sabado">Sábado</option>
+                    <option class="day" value="domingo">Domingo</option>
+                    <option class="day" value="todoslosdias">Todos los dias</option>
+                </select>
+            </div>
+            <div id="offerContainer"><!-- Offer Row Template -->
+                <!-- Offer 1 -->
+                <div class="offer" id="offer1">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+                            <img class="image_formas_de_pago" id="offerImage1" src="offer1.webp" alt="Oferta 1" />
+                        </div>
+                        <div class="column_columnas">
+                            <h3 class="centered-text offer_title" id="offerTitle1"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent1" class="centered-text">
+                                </div>
+                                <div class="toggle-more"><span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow1"></div>
+                </div>
+
+                <!-- Offer 2 -->
+                <div class="offer" id="offer2">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+                            <img class="image_formas_de_pago" id="offerImage2" src="offer2.webp" alt="Oferta 2" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle2" class="centered-text offer_title"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent2">
+                                </div>
+                                <div class="toggle-more"> <span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow2"></div>
+                </div>
+
+                <!-- Offer 3 -->
+                <div class="offer" id="offer3">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+                            <img class="image_formas_de_pago" id="offerImage3" src="offer3.webp" alt="Oferta 3" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle3" class="centered-text offer_title"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent3">
+                                </div>
+                                <div class="toggle-more"> <span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow3"></div>
+                </div>
+
+                <!-- Offer 4 -->
+                <div class="offer" id="offer4">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+                            <img class="image_formas_de_pago" id="offerImage4" src="offer4.webp" alt="Oferta 4" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle4" class="centered-text offer_title"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent4" class="centered-text">
+                                </div>
+                                <div class="toggle-more"> <span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow4"></div>
+                </div>
+                <!-- Offer 5 -->
+                <div class="offer" id="offer5">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+                            <img class="image_formas_de_pago" id="offerImage5" src="offer5.webp" alt="Oferta 5" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle5" class="centered-text offer_title"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent5" class="centered-text">
+                                </div>
+                                <div class="toggle-more"> <span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow5"></div>
+                </div>
+                <!-- Offer 6 -->
+                <div class="offer" id="offer6">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+                            <img class="image_formas_de_pago" id="offerImage6" src="offer6.webp" alt="Oferta 6" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle6" class="centered-text offer_title"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent6" class="centered-text">
+                                </div>
+                                <div class="toggle-more"> <span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow6"></div>
+                </div>
+                <!-- Offer 7 -->
+                <div class="offer" id="offer7">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+
+                            <img class="image_formas_de_pago" id="offerImage7" src="offer7.webp" alt="Oferta 7" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle7" class="centered-text offer_title"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent7" class="centered-text">
+                                </div>
+                                <div class="toggle-more"> <span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow7"></div>
+                </div>
+                <!-- Offer 8 -->
+                <div class="offer" id="offer8">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+                            <img class="image_formas_de_pago" id="offerImage8" src="offer8.webp" alt="Oferta 8" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle8" class="centered-text offer_title"> </h3>
+
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent8" class="centered-text">
+                                </div>
+                                <div class="toggle-more"> <span> Ver más</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow8"></div>
+                </div>
+
+
+
+
+
+
+
+                <!-- CREDITOS PERSONALES------------------------------------------------------------>
+
+                <!-- desktop------------------------------------------------------------>
+                <div>
+                    <img class="image_header_desktopfp"
+                        src="https://www.electromisiones.com.ar/img/cms/Quienes Somos - Nuevo/dT_Mesa de trabajo 1.webp"
+                        alt="image_header">
+
+                    <!-- mobile------------------------------------------------------------>
+                    <img class="fpimage_header_mobile"
+                        src="https://www.electromisiones.com.ar/img/cms/Quienes Somos - Nuevo/PP_HEADER_M.webp"
+                        alt="image_header">
+                </div>
+
+
+
+                <div class="offer" id="offer12">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+
+                            <img class="image_formas_de_pago" id="offerImage12"
+                                src="https://www.electromisiones.com.ar/img/cms/Quienes Somos - Nuevo/Presto10_LOGO (1).webp"
+                                alt="Oferta 12" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle12" class="centered-text offer_title">Presto 10</h3>
+                            <p id="offerDescription12" class="centered-text">
+
+                                Compra en cuotas fijas y sin tarjeta
+                            </p>
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent12" class="centered-text">
+                                    Todas tu compras en cuotas fijas y sin tarjeta. 4 simples requisitos para sacar tu
+                                    credito personal
+                                </div>
+                                <div class="toggle-more"><span></span> <span> Ver Requisitos</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow12">
+                        <p><b>•Boleta de servicio</b></p>
+                        <p><b>•DNI</b></p>
+                        <p><b>•Recibo de sueldo ( con antiguedad de 6 meses)</b></p>
+                        <p><b>•Copia del ultimo pago de monotributo</b></p>
+
+                    </div>
+                </div>
+
+
+                <div class="offer" id="offer13">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+
+                            <img class="image_formas_de_pago" id="offerImage13"
+                                src="https://www.electromisiones.com.ar/img/cms/Formas de Pago/LOGO_RAPICOMPRA.webp"
+                                alt="Oferta 13" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle13" class="centered-text offer_title">Rapi compra</h3>
+                            <p id="offerDescription13" class="centered-text">
+
+                                Liquidación instantánea!
+                            </p>
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent13" class="centered-text">
+                                    Elegís el producto y te lo llevas en el acto!
+                                </div>
+                                <div class="toggle-more"><span></span> <span> Ver Requisitos</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow13">
+
+                        <p><b>•DNI</b></p>
+                        <p><b>•Credencial vigentel</b></p>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="offer" id="offer14">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+
+                            <img class="image_formas_de_pago" id="offerImage14"
+                                src="https://www.electromisiones.com.ar/img/cms/Formas%20de%20Pago/LOGO_GOCUOTAS.webp"
+                                alt="Oferta 14" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle14" class="centered-text offer_title">Go Cuotas</h3>
+                            <p id="offerDescription14" class="centered-text">
+                                Podés utilizar tu tarjeta de débito de cualquier banco!
+                            </p>
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent14" class="centered-text">
+                                    siempre y cuando sea Visa, Mastercard o Maestro. ¡Así de simple!.
+                                </div>
+                                <div class="toggle-more"><span></span> <span> Ver Requisitos</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow14">
+                        <p><b>•Tarjeta de debito</b></p>
+                        <p><b>•DNI</b></p>
+                        <p><b>•Correo electronico</b></p>
+
+
+                    </div>
+                </div>
+
+
+                <div class="offer" id="offer15">
+                    <div class="row_fila">
+                        <div class="column_columnas image-column">
+
+
+                            <img class="image_formas_de_pago" id="offerImage15"
+                                src="https://www.electromisiones.com.ar/img/cms/Formas%20de%20Pago/LOGO_TEC.webp"
+                                alt="Oferta 15" />
+
+                        </div>
+                        <div class="column_columnas">
+                            <h3 id="offerTitle15" class="centered-text offer_title">Santander Consumer</h3>
+                            <p id="offerDescription15" class="centered-text">
+                                Todo en cuotas, Podés pedir hasta $200.000.
+                            </p>
+                        </div>
+                        <div class="column_columnas">
+                            <div class="details-container">
+                                <div class="additional-content" id="additionalContent15" class="centered-text">
+                                    Conseguí tu crédito en pocos pasos.
+                                </div>
+                                <div class="toggle-more"><span></span> <span> Ver Requisitos</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-row" id="hiddenRow15">
+                        <p><b>•DNI</b></p>
+                        <p><b>•Cuenta bancaria o virtual a tu nombre</b></p>
+
+
+
+                    </div>
+                </div>
+
+                <!-- CREDITOS PERSONALES------------------------------------------------------------>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="fpfunciones.js">
+
+    </script>
+</body>
+
+</html>

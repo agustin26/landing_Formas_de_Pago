@@ -1,0 +1,369 @@
+.div_del_body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+}
+
+.headerformas-de-pago {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navopciones {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 2px solid #ddd;
+    flex-wrap: wrap;
+}
+
+.navydiv nav div {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: bold;
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.contentt-contenido {
+    padding: 20px;
+}
+
+.selector-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.province-selector {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.province-selector select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    flex: 1;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+    min-width: 80px;
+    text-align: center;
+}
+
+.day-selector {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 10px;
+
+}
+
+.day {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.1s;
+    margin: 5px;
+    min-width: 80px;
+}
+
+.day:hover {
+    background-color: #009bbf;
+    color: white;
+}
+
+.selected {
+    background-color: #007bff;
+    color: white;
+}
+
+.offer {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /*display: none;*/
+    flex-direction: column;
+}
+
+.row_fila {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.column_columnas {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    min-width: 150px;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+}
+
+.image-column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-height: 150px;
+    object-fit: cover;
+
+
+
+}
+
+.additional-content {
+    text-align: center;
+    flex: 1;
+    overflow-y: auto;
+    max-height: 120px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.details-container {
+    display: block;
+    /* display: flex;/*pone el texto y el boton uno alado del otro*/
+    align-items: center;
+    /* Center vertically */
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.toggle-more {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+    background: #007bff;
+    padding: 0px 10px;
+    /* Remove padding as we’ll set the height */
+    width: auto;
+    /* Set a fixed width */
+    height: 40px;
+    /* Set a fixed height */
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    margin-top: 40px;
+    /* Keep margin for spacing */
+    color: white;
+    font-size: 14px;
+    /* Optional: Adjust font size */
+}
+
+.hidden-row {
+    display: none;
+    padding: 10px;
+    background: #e0f7fa;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.toggle-more span {
+    font-size: 12px;
+}
+
+/*REDUCER OF IMAGE*/
+.image_formas_de_pago {
+    width: 50%;
+    /* Establecemos el ancho en 70% para reducir un 30% */
+    height: auto;
+    /* Mantenemos la proporción de la imagen ajustando la altura automáticamente */
+    margin: 0 auto;
+    /* Centramos horizontalmente */
+    display: block;
+    /* Necesario para que margin: auto funcione en elementos en línea */
+
+}
+
+.centered-text {
+    display: flex;
+    /* Utiliza flexbox para el contenedor */
+    flex-direction: column;
+    /* Organiza los elementos en columna */
+    align-items: center;
+    /* Centra horizontalmente */
+    padding: 20px;
+    /* Espaciado interno */
+    max-width: 800px;
+    /* Máxima anchura del contenedor */
+    margin: 0 auto;
+    /* Centrado horizontal del contenedor */
+    box-sizing: border-box;
+    /* Incluye padding en el ancho total */
+    justify-content: center;
+    /* Centra verticalmente */
+    text-align: center;
+}
+
+.cabecera {
+    font-size: 15px !important;
+    padding-bottom: 5px;
+    margin: 0%;
+    text-align: center;
+}
+
+.botones_dias {
+    border: none;
+}
+
+.image_header_desktopfp {
+    display: flex;
+    width: 100%;
+    /* La imagen ocupa todo el ancho del contenedor */
+    height: auto;
+    /* Mantenemos la proporción de la imagen */
+    max-width: 1200px;
+    /* Ancho máximo para evitar que la imagen se expanda demasiado */
+
+
+    object-fit: cover;
+    /* Cubre el área del contenedor manteniendo su relación de aspecto */
+    display: block;
+    /* Necesario para que margin: auto funcione en elementos en línea */
+    margin: 0 auto;
+    /* Centra la imagen si el contenedor tiene un ancho menor que 100% */
+}
+
+.fpimage_header_mobile {
+    display: none !important;
+    /*en la web hay que ponerle el important*/
+}
+
+.offer_title {
+    font-size: 1.8em !important;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .day-selector {
+        display: none;
+        /* Hide day buttons on tablet/mobile */
+    }
+
+    .day-select {
+        display: block;
+        /* Show the select dropdown on tablet/mobile */
+        margin: 10px auto;
+        /* Center the dropdown */
+        max-width: 300px;
+        /* Limit width of dropdown */
+
+
+        padding: 10px;
+        font-size: 16px;
+        width: 100%;
+
+        flex: 1;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.1s;
+        min-width: 80px;
+    }
+
+    .details-container {
+        display: block;
+    }
+
+    .image_header_desktopfp {
+        display: none;
+    }
+
+    .fpimage_header_mobile {
+        display: flex;
+        width: 100%;
+        /* La imagen ocupa todo el ancho del contenedor */
+        height: auto;
+        /* Mantenemos la proporción de la imagen */
+        max-width: 1200px;
+        /* Ancho máximo para evitar que la imagen se expanda demasiado */
+
+
+        object-fit: cover;
+        /* Cubre el área del contenedor manteniendo su relación de aspecto */
+        display: block;
+        /* Necesario para que margin: auto funcione en elementos en línea */
+        margin: 0 auto;
+        /* Centra la imagen si el contenedor tiene un ancho menor que 100% */
+    }
+
+}
+
+@media (min-width: 769px) {
+    .day-select {
+        display: none;
+        /* Hide the select dropdown on desktop */
+    }
+
+
+
+
+}
+
+@media (max-width: 480px) {
+    .province-selector select {
+        padding: 8px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .toggle-more {
+        width: 100%;
+        /* Make the button full width on small screens */
+        padding: 6px;
+        /* Optional: adjust padding */
+        box-sizing: border-box;
+        /* Ensure padding and border are included in the width */
+        margin: 0 auto;
+        /* Center the button by setting left and right margins to auto */
+
+    }
+
+    .hidden-row {
+        padding: 8px;
+    }
+
+    .details-container {
+        display: block;
+    }
+
+    .centered-text {
+        padding: 10px;
+        /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    .offer_title {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+}
